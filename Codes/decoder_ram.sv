@@ -1,9 +1,9 @@
-// ============================================================
+
 // decoder_ram.v
 // 128x8 RAM using 4 blocks of 32x8, decoder selects block
 // Address[6:5] -> 2-to-4 decoder -> chip select
 // Address[4:0] -> 5-bit word address within each block
-// ============================================================
+
 module decoder_ram (
     input  wire        clk,
     input  wire        rst_n,
