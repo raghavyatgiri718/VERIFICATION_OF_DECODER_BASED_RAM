@@ -42,11 +42,7 @@ class ram_read_monitor;
         this.observed_count = 0;
     endfunction
 
-    // -------------------------------------------------------
-    // run() ? relay completed read transactions to SB and RM
-    // The read driver already captured rdata/valid; we just
-    // relay and optionally cross-check valid on the bus.
-    // -------------------------------------------------------
+    
     task run();
         ram_transaction txn;
         $display("[RD-MON] Started");
